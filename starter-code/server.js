@@ -3,6 +3,9 @@ var express = require('express'),
     app = express(),
     bodyParser = require('body-parser');
 
+var Todo = require('./models/todo');
+
+
 // configure bodyParser (for receiving form data)
 app.use(bodyParser.urlencoded({ extended: true }));
 
